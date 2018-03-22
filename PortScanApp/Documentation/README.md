@@ -44,14 +44,16 @@ FEATURES SUPPORTED OR COVERED [AS PER REQUIREMENT]
 		12)Parallel processing of records (only through API call)
 
 
-WHAT I BORROWED FROM INTERNET.
+WHAT I BORROWED FROM INTERNET
+
 		1) REGEX Patterns for I.P address & domain validation.
 		2) Understood concepts of better formatting of NMAP commands through company's & other documentations.
 
 	
 	
 BUSINESS FLOW [SEE ATTACHED SCREENSHOTS]
-		You can specify ip address or domain name using same text to go for port scanning. It will run NMAP command utility latest scanning(scan no. 1). Based on results of open ports data will be transferred to UI by API in JSON format. On second hit of same identifier (ip or domain) again a latest scan (scan no. 2) will run and result will be compared with previous scan data (scan no. 1). Newly added , carry over open ports and substracted ports will be given finally to UI in this step along with history (scan no.1). In third hit it will again repeate step of latest scanning (scan no. 3 this time) and comparing with previous scan (this time it is scan no. 2) and result is prepared as per same logic. But in this step a new addition of history will also be added (scan no. 1 + scan.no.2). 
+
+You can specify ip address or domain name using same text to go for port scanning. It will run NMAP command utility latest scanning(scan no. 1). Based on results of open ports data will be transferred to UI by API in JSON format. On second hit of same identifier (ip or domain) again a latest scan (scan no. 2) will run and result will be compared with previous scan data (scan no. 1). Newly added , carry over open ports and substracted ports will be given finally to UI in this step along with history (scan no.1). In third hit it will again repeate step of latest scanning (scan no. 3 this time) and comparing with previous scan (this time it is scan no. 2) and result is prepared as per same logic. But in this step a new addition of history will also be added (scan no. 1 + scan.no.2). 
 
 		So in Nth hit of same record , it will run a fresh scan(scan no. N) and compare it with (scan no. N-1). And in additional add history of previous iterations which is configurable like upto last 5 iterations or 6 iterations or all iterations or no history addition.[History will be added from scan no. N-1 UPTO scan no. X [configurable] ] 
 
