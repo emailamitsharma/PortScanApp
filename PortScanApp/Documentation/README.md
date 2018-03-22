@@ -77,7 +77,9 @@ HOW TO RUN :-
 		Concurrency URL: http://localhost:8080/PortScanAPI/api/ports?input=akshima.in,192.168.1.1&isLatestScanRequired=true
 
 DEPLOYED [AWS Account[EC2-[LOCAL MYSQL , NOT RDS]]]
-		AWS Cloud URLs.
+
+		AWS Cloud URLs
+		
 		APPLICATION URL: - http://akshima.in:8082/PortScanAPI
 		API URL: http://akshima.in:8082/PortScanAPI/api/ports?input=akshima.in&isLatestScanRequired=true
 		Concurrency URL: http://akshima.in:8082/PortScanAPI/api/ports?input=akshima.in,192.168.1.1&isLatestScanRequired=true
@@ -127,4 +129,4 @@ KNOWN ISSUES
 		2) Auto persistence columns like updated_by,created_date,updated_date not functional at the moment.
 		
 Time Taken 
-		2 days
+		2-3 days
